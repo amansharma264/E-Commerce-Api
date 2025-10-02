@@ -17,13 +17,13 @@ app.use(cookieParser())
 
 // Route import
 import authRouter from "./routes/auth.routes.js"
-// import productRouter from "./routes/product.routes.js"
+import productRouter from "./routes/product.routes.js"
 import cartRouter from "./routes/cart.routes.js"
 // import paymentRouter from "./routes/payment.routes.js"
 
 // Router Declaration
 app.use("/api/v1/auth", authRouter);
-// app.use("/api/v1/products", productRouter);
+app.use("/api/v1/products", productRouter);
 app.use("/api/v1/cart", cartRouter);
 // app.use("/api/v1/payment", paymentRouter);
 
